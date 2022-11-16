@@ -1,5 +1,5 @@
 {
-  "name": "preentrega-tres",
+  "name": "proyecto-final",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FranciscoMonzon1/PR-EENTREGA3-MONZON-NORIEGA.git"
+    "url": "https://github.com/valentinamarino1/PF-MarinoMirabelli.git"
   },
-  "author": "\"MONZON FRANCISCO\"",
+  "author": "\"MARINO VALENTINA\"",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FranciscoMonzon1/PR-EENTREGA3-MONZON-NORIEGA/issues"
   },
-  "homepage": "https://github.com/FranciscoMonzon1/PR-EENTREGA3-MONZON-NORIEGA#readme",
   "dependencies": {
     "bootstrap": "^5.2.2",
     "i": "^0.3.7",
