@@ -1,0 +1,33 @@
+/* Footer */
+footer {
+   background: url(../imagenes/footer.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-top: 1px solid rgba(0, 0, 0, 0.616);
+
+   div {
+
+      h3 {
+         text-align: center;
+         padding: 10px;
+         color: white;
+         font-family: $resaltar;
+      }
+
+      div {
+         a {
+            i {
+               color: $color-uno;
+               transition: all 0.3s;
+
+               &:hover {
+                  font-size: 30px;
+                  text-shadow: 2px 2px 5px white
+               }
+
+            }
+         }
+      }
+   }
+}

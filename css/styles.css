@@ -1,0 +1,556 @@
+.contenedorgeneral, .contenedor__servicios, .contenedor__ubicacion, .Contenedor__tarjeta {
+  background: url(../imagenes/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
+.contenedorgeneral .celular .neon, .contenedor__ubicacion .horarios .neon {
+  display: inline-block;
+  margin: 10px;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  color: #974063;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px #974063;
+}
+.contenedorgeneral .celular .neon:hover, .contenedor__ubicacion .horarios .neon:hover {
+  text-decoration: none;
+  color: white;
+  background: #974063;
+}
+
+.contenedor__servicios .servicios, .Contenedor__tarjeta .Tarjeta {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+  background-color: rgba(128, 128, 128, 0.377);
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 4px 4px 4px black;
+}
+
+/* RESETEO */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* TIPOGRAFIA */
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* HEADER DE LA PAGINA DE INICO */
+.navegar {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .navegar {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.205);
+    width: 100%;
+  }
+}
+
+/* ICONO DEL NAV */
+.navresponsive {
+  background-color: white;
+  border: 3px solid #974063;
+}
+
+/* HEADER DE TODAS LAS PAGINAS */
+.navegante {
+  position: relative;
+  background-color: black;
+}
+
+/* NAV GENERAL */
+.navegacion ul li a {
+  color: #974063;
+  font-family: "Roboto Slab", serif;
+}
+.navegacion ul li a:hover {
+  color: white;
+  border-bottom: 2px solid #974063;
+}
+
+/* Footer */
+footer {
+  background: url(../imagenes/footer.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 1px solid rgba(0, 0, 0, 0.616);
+}
+footer div h3 {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-family: "Lobster", cursive;
+}
+footer div div a i {
+  color: #974063;
+  transition: all 0.3s;
+}
+footer div div a i:hover {
+  font-size: 30px;
+  text-shadow: 2px 2px 5px white;
+}
+
+/* BOTON DE WHATSAPP */
+.btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+.btn-wsp:hover {
+  text-decoration: none;
+  color: #0df053;
+  background: #fff;
+}
+
+.contenedorgeneral .contenedor__consultas .formulario__boton input, .Contenedor__tarjeta .Tarjeta .Tarjeta__boton, .fila__inicio .texto__inicio a, .banner .titulo__banner a {
+  background-color: #974063;
+  border: 2px solid black;
+  color: black;
+  font-family: "Roboto Slab", serif;
+}
+.contenedorgeneral .contenedor__consultas .formulario__boton input:hover, .Contenedor__tarjeta .Tarjeta .Tarjeta__boton:hover, .fila__inicio .texto__inicio a:hover, .banner .titulo__banner a:hover {
+  background-color: black;
+  color: #974063;
+  border: 2px solid #974063;
+}
+
+/* PAGINA DE INICIO */
+.banner {
+  background: linear-gradient(to bottom, #974063, #ff9677);
+  width: 100%;
+  height: 55vh;
+  color: black;
+}
+@media (min-width: 768px) {
+  .banner {
+    background-image: url(../imagenes/bannercero.jpg);
+    width: 100%;
+    height: 95vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+}
+.banner .titulo__banner {
+  text-align: center;
+  margin-top: 90px;
+}
+@media (min-width: 850px) {
+  .banner .titulo__banner {
+    margin-top: 0;
+    transform: translate(0px, 155px);
+  }
+}
+.banner .titulo__banner h1 {
+  font-size: 2.5rem;
+  padding: 10px 0px;
+  font-family: "Bebas Neue", cursive;
+}
+@media (min-width: 768px) {
+  .banner .titulo__banner h1 {
+    font-size: 3.5rem;
+    padding: 10px 0px;
+  }
+}
+.banner .titulo__banner h2 {
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .banner .titulo__banner h2 {
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+  }
+}
+/* CONTENIDO DE INICIO */
+.fila__inicio {
+  gap: 10px;
+  padding: 10px;
+  background: url(../imagenes/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .fila__inicio {
+    gap: 0;
+    padding: 0;
+  }
+}
+.fila__inicio .img__inicio {
+  padding: 0;
+  margin: 0;
+}
+.fila__inicio .texto__inicio--uno {
+  background-color: black;
+  color: white;
+}
+.fila__inicio .texto__inicio--dos {
+  background-color: #974063;
+  color: black;
+}
+.fila__inicio .texto__inicio {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.fila__inicio .texto__inicio h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2.8rem;
+}
+.fila__inicio .texto__inicio .btndos {
+  background-color: #974063;
+  border: 2px solid black;
+  color: black;
+  font-family: "Roboto Slab", serif;
+}
+.fila__inicio .texto__inicio .btndos:hover {
+  background-color: black;
+  color: #974063;
+  border: 2px solid #974063;
+}
+
+/* FIN PAGINA DE INICIO */
+/* PAGINA DE TIENDA */
+.titulo {
+  text-align: center;
+  padding: 10px;
+  background-color: #974063;
+  margin: 0;
+  color: black;
+  font-family: "Bebas Neue", cursive;
+}
+
+.Contenedor__tarjeta {
+  gap: 15px;
+  /* TARJETAS TIENDA */
+}
+@media (min-width: 768px) {
+  .Contenedor__tarjeta {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+    padding: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .Contenedor__tarjeta {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "inter inter princ" "dif dif princ";
+  }
+}
+.Contenedor__tarjeta .Tarjeta__princ {
+  grid-area: princ;
+}
+@media (min-width: 1200px) {
+  .Contenedor__tarjeta .Tarjeta__princ {
+    font-size: 1.5rem;
+  }
+}
+.Contenedor__tarjeta .Tarjeta__inter {
+  grid-area: inter;
+}
+.Contenedor__tarjeta .Tarjeta__dif {
+  grid-area: dif;
+}
+.Contenedor__tarjeta .Tarjeta .Tarjeta__titulo {
+  height: 40vh;
+  width: 100%;
+  background-image: url(../imagenes/GYM-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  color: white;
+  text-shadow: 8px 8px 8px black;
+  font-family: "Bebas Neue", cursive;
+}
+.Contenedor__tarjeta .Tarjeta .Tarjeta__titulo--intermedio {
+  background-image: url(../imagenes/GYM-02.jpg);
+}
+.Contenedor__tarjeta .Tarjeta .Tarjeta__titulo--dificil {
+  background-image: url(../imagenes/GYM-03.jpg);
+}
+.Contenedor__tarjeta .Tarjeta .Tarjeta__parrafo {
+  height: 60%;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+}
+@media (min-width: 1200px) {
+  .Contenedor__tarjeta .Tarjeta .Tarjeta__parrafo {
+    height: auto;
+  }
+}
+/* FIN PAGINA TEINDA */
+/* PAGINA DE UBICACION */
+.contenedor__ubicacion {
+  /* HORARIOS */
+  /* UBICACION */
+}
+.contenedor__ubicacion .horarios {
+  text-align: center;
+}
+.contenedor__ubicacion .horarios h2 {
+  font-family: "Bebas Neue", cursive;
+}
+@media (min-width: 768px) {
+  .contenedor__ubicacion .horarios ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+}
+.contenedor__ubicacion .horarios ul span {
+  font-size: 23px;
+  font-family: "Lobster", cursive;
+  margin: 8px;
+}
+.contenedor__ubicacion .horarios ul li {
+  list-style: circle;
+}
+.contenedor__ubicacion .contenedor_preubicacion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 10px;
+}
+.contenedor__ubicacion .ubicacion {
+  box-shadow: 5px 5px 5px black;
+}
+.contenedor__ubicacion .ubicacion__titulo {
+  text-align: center;
+  background-color: #974063;
+  color: black;
+  font-family: "Bebas Neue", cursive;
+}
+@media (max-width: 768px) {
+  .contenedor__ubicacion .ubicacion__mapa {
+    width: 100%;
+  }
+}
+
+/* FIN PAGINA DE UBICACION */
+/* PAGINA DE SERVICIOS */
+.contenedor__servicios {
+  gap: 10PX;
+}
+@media (min-width: 1200px) {
+  .contenedor__servicios {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "musc musc fun" "musc musc fun" "ga ga fun" "ga ga yog" "zumb zumb yog" "zumb zumb yog";
+  }
+}
+@media (min-width: 768px) {
+  .contenedor__servicios .servicios {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+}
+.contenedor__servicios .servicios__img {
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px black;
+  height: 250px;
+  width: 250px;
+}
+.contenedor__servicios .servicios__parrafo {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  text-align: left;
+  color: black;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  .contenedor__servicios .servicios__parrafo {
+    text-align: start;
+    padding: 10px;
+  }
+}
+.contenedor__servicios .servicios__parrafo h2 {
+  font-size: 2REM;
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+}
+.contenedor__servicios .servicios__parrafo h3 {
+  font-size: 2REM;
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+}
+.contenedor__servicios .servicios__parrafo ul {
+  margin-bottom: 10px;
+  list-style: circle;
+  text-align: justify;
+}
+.contenedor__servicios .musc {
+  grid-area: musc;
+}
+.contenedor__servicios .gap {
+  grid-area: ga;
+}
+.contenedor__servicios .fun {
+  grid-area: fun;
+}
+@media (min-width: 1024px) {
+  .contenedor__servicios .fun {
+    flex-flow: column nowrap;
+    font-size: 22px;
+  }
+}
+.contenedor__servicios .zumb {
+  grid-area: zumb;
+}
+.contenedor__servicios .yog {
+  grid-area: yog;
+}
+@media (min-width: 1024px) {
+  .contenedor__servicios .yog {
+    flex-flow: column nowrap;
+    font-size: 22px;
+  }
+}
+
+/* FIN PAGINA DE SERVICIOS */
+/* COMIENZO DE CONSULTAS */
+.contenedorgeneral .contenedor__consultas {
+  display: flex;
+  flex-flow: column nowrap;
+  color: black;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  /* SOBRE NOSOTROS | CONSULTAS */
+  /* FORMULARIO | CONSULTAS */
+}
+@media (min-width: 900px) {
+  .contenedorgeneral .contenedor__consultas {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+}
+.contenedorgeneral .contenedor__consultas .consultas__parrafo {
+  font-size: 1.5rem;
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .contenedorgeneral .contenedor__consultas .consultas {
+    width: 55%;
+  }
+}
+.contenedorgeneral .contenedor__consultas .consultas__lista {
+  display: flex;
+  justify-content: space-around;
+}
+.contenedorgeneral .contenedor__consultas .consultas__lista a i {
+  font-size: 1.8rem;
+  color: #974063;
+  transition: all 0.3s;
+}
+.contenedorgeneral .contenedor__consultas .consultas__lista a i:hover {
+  font-size: 30px;
+  text-shadow: 2px 2px 5px black;
+}
+.contenedorgeneral .contenedor__consultas .formulario {
+  box-shadow: 4px 4px 4px black;
+  font-size: 1.4rem;
+  text-align: center;
+  width: 80%;
+  background-color: #974063;
+  padding: 10px;
+  border-radius: 15px;
+}
+@media (min-width: 900px) {
+  .contenedorgeneral .contenedor__consultas .formulario {
+    width: 45%;
+  }
+}
+.contenedorgeneral .contenedor__consultas .formulario__titulo {
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+}
+.contenedorgeneral .contenedor__consultas .formulario .fila {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 10px;
+}
+.contenedorgeneral .contenedor__consultas .formulario .fila label {
+  font-family: "Roboto Slab", serif;
+}
+.contenedorgeneral .contenedor__consultas .formulario__boton {
+  text-align: center;
+  padding: 10px;
+}
+.contenedorgeneral .contenedor__consultas .formulario div input {
+  box-shadow: 4px 4px 4px black;
+  border-radius: 8px;
+}
+.contenedorgeneral .contenedor__consultas .formulario div textarea {
+  box-shadow: 4px 4px 4px black;
+  border-radius: 8px;
+}
+.contenedorgeneral .celular {
+  text-align: center;
+}
+.contenedorgeneral .celular h3 {
+  font-size: 1.2rem;
+}
+.contenedorgeneral .celular h3 span {
+  padding-right: 11px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* FIN DE CONSULTAS  */
+
+/*# sourceMappingURL=styles.css.map */

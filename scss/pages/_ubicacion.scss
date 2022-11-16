@@ -1,0 +1,66 @@
+/* PAGINA DE UBICACION */
+//COMIENZO DEL CONTENIDO
+.contenedor__ubicacion {
+    @extend %contenedorbase;
+
+    /* HORARIOS */
+    //COMIENZO DE SECCION HORARIOS
+    .horarios {
+        text-align: center;
+
+        .neon {
+          @extend %neon;
+        }
+
+        h2 {
+            font-family: $titulo ;
+        }
+
+        ul {
+            @media(min-width: 768px) {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-around;
+            }
+
+            span {
+                font-size: 23px;
+                font-family: $resaltar;
+                margin: 8px;
+            }
+
+            li {
+                list-style: circle;
+            }
+        }
+    }
+
+    /* UBICACION */
+    //COMIENZO DE SECCION DE UBICACION
+    .contenedor_preubicacion {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .ubicacion {
+        box-shadow: 5px 5px 5px black;
+
+        &__titulo {
+            text-align: center;
+            background-color: $color-uno;
+            color: black;
+            font-family: $titulo;
+        }
+
+        &__mapa {
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* FIN PAGINA DE UBICACION */

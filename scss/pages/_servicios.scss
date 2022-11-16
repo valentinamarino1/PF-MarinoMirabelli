@@ -1,0 +1,100 @@
+/* PAGINA DE SERVICIOS */
+//COMIENZO DE CONTENIDO
+.contenedor__servicios {
+    @extend %contenedorbase;
+   
+    gap: 10PX;
+ //GRID
+    @media(min-width:1200px) {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas:
+            "musc musc fun"
+            "musc musc fun"
+            "ga ga fun"
+            "ga ga yog"
+            "zumb zumb yog"
+            "zumb zumb yog";
+    }
+
+    .servicios {
+        @extend %tarjeta;
+
+        @media(min-width: 768px) {
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+
+        &__img {
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px black;
+            height: 250px;
+            width: 250px;
+        }
+
+        &__parrafo {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-around;
+            text-align: left;
+            color: black;
+            text-align: justify;
+
+            @media(min-width: 768px) {
+                text-align: start;
+                padding: 10px;
+            }
+            h2{
+                font-size: 2REM;
+                margin-top: 20px;
+                text-align: center;
+                font-family: $titulo; 
+            }
+
+            h3 {
+                font-size: 2REM;
+                margin-top: 20px;
+                text-align: center;
+                font-family: $titulo;
+            }
+
+            ul {
+                margin-bottom: 10px;
+                list-style: circle;
+                text-align: justify;
+            }
+        }
+    }
+ //GRID AREA
+    .musc {
+        grid-area: musc;
+    }
+
+    .gap {
+        grid-area: ga;
+    }
+
+    .fun {
+        grid-area: fun;
+
+        @media(min-width:1024px) {
+            flex-flow: column nowrap;
+            font-size: 22px;
+        }
+    }
+
+    .zumb {
+        grid-area: zumb;
+    }
+
+    .yog {
+        grid-area: yog;
+
+        @media(min-width:1024px) {
+            flex-flow: column nowrap;
+            font-size: 22px;
+        }
+    }
+}
+/* FIN PAGINA DE SERVICIOS */

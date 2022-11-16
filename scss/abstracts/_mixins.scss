@@ -1,0 +1,62 @@
+@mixin botoon ($valor1, $valor2){
+    background-color: $valor1;
+    border: 2px solid $valor2;
+    color: $valor2;
+    font-family: $boton;
+  
+    &:hover {
+      background-color:$valor2;
+      color: $valor1;
+      border: 2px solid $valor1;
+    }
+}
+@mixin mobile {
+    @media(min-width: 768px){
+        @content
+    }
+}
+
+%contenedorbase {
+    background: url(../imagenes/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+%neon {
+    display: inline-block;
+    margin: 10px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    color: $color-uno;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px $color-uno;
+
+
+    &:hover {
+        text-decoration: none;
+        color: white;
+        background: $color-uno;
+    }
+}
+
+%tarjeta {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    background-color: $color-tarjeta;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 4px 4px 4px black;
+}
+

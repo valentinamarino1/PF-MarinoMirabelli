@@ -1,0 +1,94 @@
+/* PAGINA DE TIENDA */
+//TITULO PARA TODAS LAS PAGINAS MIX
+.titulo {
+    text-align: center;
+    padding: 10px;
+    background-color: $color-uno;
+    margin: 0;
+    color: black;
+    font-family: $titulo;
+}
+//COMIENZO DE PAGINA
+.Contenedor__tarjeta {
+    @extend %contenedorbase;
+    gap: 15px;
+
+    @media(min-width: 768px) {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        width: 100%;
+        padding: 10px;
+
+    }
+
+    //GRID
+    @media(min-width:1200px) {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "inter inter princ"
+            "dif dif princ";
+    }
+
+    .Tarjeta__princ {
+        grid-area: princ;
+
+        @media(min-width:1200px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .Tarjeta__inter {
+        grid-area: inter;
+    }
+
+    .Tarjeta__dif {
+        grid-area: dif;
+    }
+
+    /* TARJETAS TIENDA */
+    //TARJETAS DE LA TIENDA
+    .Tarjeta {
+        @extend %tarjeta;
+        
+        .Tarjeta__titulo {
+            height: 40vh;
+            width: 100%;
+            background-image: url(../imagenes/GYM-01.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            text-align: center;
+            color: white;
+            text-shadow: 8px 8px 8px black;
+            font-family: $titulo;
+        }
+
+        .Tarjeta__titulo--intermedio {
+            background-image: url(../imagenes/GYM-02.jpg);
+        }
+
+        .Tarjeta__titulo--dificil {
+            background-image: url(../imagenes/GYM-03.jpg);
+        }
+
+        .Tarjeta__parrafo {
+            height: 60%;
+            text-align: center;
+            font-family: $boton;
+
+            @media(min-width:1200px) {
+                height: auto;
+            }
+        }
+
+        .Tarjeta__boton {
+            @extend %botton;
+        }
+    }
+}
+
+/* FIN PAGINA TEINDA */

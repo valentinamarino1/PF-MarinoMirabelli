@@ -1,0 +1,11 @@
+/* NAV GENERAL */
+//NAV EN GENERAL
+.navegacion ul li a {
+    color: $color-uno;
+    font-family: 'Roboto Slab', serif;
+  
+    &:hover {
+      color: white;
+      border-bottom: 2px solid $color-uno;
+    }
+  }

@@ -1,0 +1,130 @@
+/* COMIENZO DE CONSULTAS */
+//COMIENZO DE CONTENIDO
+.contenedorgeneral {
+    @extend %contenedorbase;
+
+    .contenedor__consultas {
+        display: flex;
+        flex-flow: column nowrap;
+        color: black;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+
+        @media(min-width: 900px) {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+        }
+
+        /* SOBRE NOSOTROS | CONSULTAS */
+        //SOBRE NOSOTROS
+        .consultas {
+            &__parrafo {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            @media(min-width: 900px) {
+                width: 55%;
+            }
+
+
+            &__lista {
+                display: flex;
+                justify-content: space-around;
+
+                a {
+                    i {
+                        font-size: 1.8rem;
+                        color: $color-uno;
+                        transition: all 0.3s;
+
+                        &:hover {
+                            font-size: 30px;
+                            text-shadow: 2px 2px 5px black
+                        }
+                    }
+                }
+            }
+        }
+
+        /* FORMULARIO | CONSULTAS */
+        //FORMULARIO
+        .formulario {
+            box-shadow: 4px 4px 4px black;
+            font-size: 1.4rem;
+            text-align: center;
+            width: 80%;
+            background-color: $color-uno;
+            padding: 10px;
+            border-radius: 15px;
+
+            @media(min-width: 900px) {
+                width: 45%;
+            }
+
+            &__titulo {
+                text-align: center;
+                font-family: $titulo;
+            }
+
+            .fila {
+                display: flex;
+                flex-flow: column nowrap;
+                margin-top: 10px;
+
+                label {
+                    font-family: $boton;
+                }
+            }
+
+            &__boton {
+                text-align: center;
+                padding: 10px;
+
+                input {
+                    @extend %botton;
+                }
+
+            }
+
+            div {
+                input {
+                    box-shadow: 4px 4px 4px black;
+                    border-radius: 8px;
+                }
+
+                textarea {
+                    box-shadow: 4px 4px 4px black;
+                    border-radius: 8px;
+                }
+            }
+
+        }
+
+
+    }
+
+    .celular {
+        text-align: center;
+
+        .neon {
+            @extend %neon;
+        }
+
+        
+
+        h3 {
+            font-size: 1.2rem;
+
+            span {
+                padding-right: 11px;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/* FIN DE CONSULTAS  */
